@@ -1,0 +1,509 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	src: url("Fonts/HelveticaNeueLTStd Lt.otf");
+	font-family: light;}
+@font-face{
+	src: url("Fonts/HelveticaNeueLTStd-BdCn.otf");
+	font-family: bold-condenced;}
+@font-face{
+	src: url("Fonts/HelveticaNeueLTStd-Cn.otf");
+	font-family: condenced;}
+@font-face{
+	src: url("Fonts/HelveticaNeueLTStd-It.otf");
+	font-family: itali;}
+@font-face{
+	src: url("Fonts/HelveticaNeueLTStd-LtCn.otf");
+	font-family: light-condenced;}
+
+a{
+text-decoration: none;
+}
+body {
+	background-color: #ECECEC}
+
+*{margin:0;
+padding:0;}
+
+h2{ font-family: condenced;
+	color: white;}
+h1{font-family: bold-condenced;}
+
+#header {
+	z-index: 20;
+	display: block;
+	width: 100vw;
+	height: 7vh;
+	position: fixed;
+	top:0;
+	background-color: #2B3449;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end:1;}
+
+#navbar {
+	display: block;
+	width: 100vw;
+	height: 3vh;
+	background-color: #2B3449;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 5;
+	grid-row-end:5;}
+
+#homepage-navigation{
+	display: grid;
+	grid-template-columns: 50vw 50vw ;
+	grid-template-rows: 7vh 30vh 30vh 30vh 3vh;
+	align-items: center;
+	justify-content: center;
+	 align-content: start;
+}
+
+#homepage-modules {
+	width: 50vw;
+	height: 30vh;
+	display: block;
+	background-color: #6ECEB2;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 3;
+	grid-row-end:3;
+	justify-items: center;
+		text-align: center;
+}
+
+#homepage-current-task {
+	display: block;
+	width: 50vw;
+	height: 30vh;
+	background-color: #FFB4AA;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end:3;
+	justify-items: center;
+		text-align: center;
+}
+
+#homepage-newsfeed{
+	width: 50vw;
+	height: 30vh;
+	display: block;
+	background-color: #FDD757;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 4;
+	grid-row-end:4;
+	text-align: center;
+}
+
+#homepage-schedule{
+	position: 
+	width: 50vw;
+	height: 30vh;
+	display: block;
+	background-color: #59CBE8;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 4;
+	grid-row-end:4;
+	text-align: center;
+}
+
+#logout{
+	font-family: condenced;
+	font-size: 1.2em;
+	position: absolute;
+	right: 2%;
+	top: 2%
+}
+
+#english-danish{
+	font-size: 2em;
+	color: #CA564A;
+	text-align:center;
+	align-content: center;
+	position: fixed;
+	background-color: white;
+	width: 50px;
+	height: 7vh;
+	right: 25%;
+}
+#slide-show{
+	top:7vh;
+	grid-area: 1/3;
+}
+
+slider {
+ display: block;
+ width: 100%;
+ height: 30vh;
+ background-color: #1f1f1f;
+ overflow: hidden;
+ position: absolute;
+}
+
+slider > * {
+ position: absolute;
+ display: block;
+ width: 100%;
+ height: 100%;
+ background: #1f1f1f;
+ animation: slide 12s infinite;
+ overflow: hidden;
+}
+
+slide:nth-child(1){
+ left: 0%;
+ animation-delay: -1s;
+ background-image: url("images/faq3.jpg");
+ background-size: cover;
+ background-position: center;
+}
+
+slide:nth-child(2){
+ animation-delay: 2s;
+ background-image: url("images/Find-vej.png");
+ background-size: cover;
+ background-position: center;
+}
+
+slide:nth-child(3){
+ animation-delay: 5s;
+ background-image: url("images/Frontpage-2200x1400.jpg");
+ background-size: cover;
+ background-position: center;
+}
+
+slide:nth-child(4){
+ left: 0%;
+ animation-delay: 8s;
+ background-image: url("images/Studieliv.jpg");
+ background-size: cover;
+ background-position: center;
+}
+
+slide p {
+	background-color: white;
+	color: black;
+ font-family: bold-condenced;
+ font-size: 50px;
+ text-align: center;
+ display: inline-block;
+ width: 80%;
+ margin-top: 100px;
+margin-left: 30px;
+}
+.homepage-schedule-image {
+	width: 10vh;
+	height: auto;
+	margin: 10px;
+	padding-top: 5vh;}
+
+@keyframes slide {
+ 0% { left: 100%; width: 100%; }
+ 5% { left: 0%; }
+ 25% { left: 0%; }
+ 30% { left: -100%; width: 100%; }
+ 30.0001% { left: -100%; width: 0%; }
+ 100% { left: 100%; width: 0%; }
+}
+
+#navigation-bar {
+	height: 10vh;
+	width: 100vw;
+	position: fixed;
+	bottom: 0%;
+	background-color:#2B3449; 
+	display:grid;
+	justify-content: center;
+	text-align: center;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 10vh;}
+
+.navbar-image{
+	padding-top: 2.5vh;
+	height: 5vh;
+	width: auto;
+	justify-content: center;}
+
+#login-page{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 10vh 10vh 20vh 3vh 3vh 0.3fr 0.2fr 0.3fr 1fr;
+}
+
+#kealoginlogo{
+	height: 20vh;
+	width: auto;
+	grid-column: 2;
+	grid-row: 2;
+	justify-self: center;
+	text-align: center;}
+
+#username{
+	height:1.5em;
+	width: 15em;
+	grid-row: 4;
+	grid-column: 2;
+	justify-self: center;
+	text-align: center;}
+#username-text{
+	height:1.5em;
+	width: 15em;
+	grid-row: 5;
+	grid-column: 2;
+	justify-self: center;
+	text-align: center;}
+#password{
+	height:5em;
+	width: 15em;
+	grid-row: 7;
+	grid-column: 2;
+	justify-self: center;
+	text-align: center;}
+#password-text{
+	text-align: center;
+	height:1.5em;
+	width: 15em;
+	grid-row: 8;
+	grid-column: 2;
+	justify-self: center;}
+
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+} 
+/* Module page */
+
+#semester-closed{
+	display:grid;
+	grid-template-columns: 
+		10vw 80vw 10vw;
+	grid-template-rows: 
+		7vh 5vh 10vh 5vh 10vh 5vh 10vh 5vh 10vh 5vh 10vh 5vh;
+}
+#first-semester-closed{
+	grid-column: 2;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+
+#second-semester-closed{
+	grid-column: 2;
+	grid-row-start: 5;
+	grid-row-end: 6;
+}
+
+#third-semester-closed{
+	grid-column: 2;
+	grid-row-start: 7;
+	grid-row-end: 8;
+}
+
+#fourth-semester-closed{
+	grid-column: 2;
+	grid-row-start: 9;
+	grid-row-end: 10;
+}
+
+#fifth-semester-closed{
+	grid-column: 2;
+	grid-row-start: 11;
+	grid-row-end: 12;
+}
+
+.first-semester-open {
+	z-index: 0;
+	width: 80vw;
+	height: 10vh;
+	background-color: #6ECEB2;
+	border-radius:30px;
+	text-align: center;
+	justify-content: center;
+	animation: openbar 1s forwards;}
+
+#modules-1{
+	display: grid;
+	grid-template-rows: 
+		5vh 10vh 5vh 10vh 5vh 10vh 5vh 10vh 5vh;}
+.module-1{
+	visibility: hidden;
+	position: fixed;}
+.module-2{
+	visibility: hidden;
+	position: fixed;}
+.module-3{
+	visibility: hidden;
+	position: fixed;}
+.module-4{
+	visibility: hidden;
+	position: fixed;}
+
+.moduleoneopen{
+	opacity: 0;
+	grid-column: 1;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	z-index: 2;
+	width: 70vw;
+	justify-self:center;
+	height: 10vh;
+	background-color: #ECECEC;
+	border-radius:30px;
+	text-align: center;
+	justify-content: center;
+	animation: openmodule .5s .15s forwards;}
+.moduletwoopen{
+	opacity: 0;
+	grid-column: 1;
+	grid-row-start: 4;
+	grid-row-end: 4;
+	z-index: 2;
+	width: 70vw;
+	justify-self:center;
+	height: 10vh;
+	background-color: #ECECEC;
+	border-radius:30px;
+	text-align: center;
+	justify-content: center;
+	animation: openmodule .5s .30s forwards;}
+.modulethreeopen{
+	opacity: 0;
+	grid-column: 1;
+	grid-row-start: 6;
+	grid-row-end: 6;
+	z-index: 2;
+	width: 70vw;
+	justify-self:center;
+	height: 10vh;
+	background-color: #ECECEC;
+	border-radius:30px;
+	text-align: center;
+	justify-content: center;
+	animation: openmodule .5s .45s forwards;}
+.modulefouropen{
+	opacity: 0;
+	grid-column: 1;
+	grid-row-start: 8;
+	grid-row-end: 8;
+	z-index: 2;
+	width: 70vw;
+	justify-self:center;
+	height: 10vh;
+	background-color: #ECECEC;
+	border-radius:30px;
+	text-align: center;
+	justify-content: center;
+	animation: openmodule .5s .60s forwards;}
+
+@keyframes openmodule {
+	0%{opacity: 0;}
+	100%{opacity: 100;}}
+
+@keyframes openbar{
+	0%{height:10vh;}
+	100%{height: 75vh;}}
+	
+.first-semester-closed {
+	display: inline-block;
+	z-index: 0;
+	width: 80vw;
+	height: 10vh;
+	background-color: #6ECEB2;
+	border-radius:30px;
+	text-align: center;
+	justify-content: center;
+}
+.second-semester-closed {
+	display: block;
+	width: 80vw;
+	height: 10vh;
+	border-radius:30px;
+	background-color: #6ECEB2;
+	text-align: center;
+	justify-content: center;
+}
+.third-semester-closed {
+	display: block;
+	width: 80vw;
+	height: 10vh;
+	border-radius:30px;
+	background-color: #6ECEB2;
+	text-align: center;
+	justify-content: center;
+}
+.fourth-semester-closed {
+	display: block;
+	width: 80vw;
+	height: 10vh;
+	border-radius:30px;
+	background-color: #6ECEB2;
+	text-align: center;
+	justify-content: center;}
+
+.fifth-semester-closed {
+	display: block;
+	width: 80vw;
+	height: 10vh;
+	border-radius:30px;
+	background-color: #6ECEB2;
+	text-align: center;
+	justify-content: center;
+}
+
