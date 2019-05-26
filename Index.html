@@ -37,43 +37,23 @@
 	<label for="psw" id="password"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required id="password-text">
 	 -->	
-	 <img id="kealoginlogo" src="images/KEA_logo_EN_Web.jpg" width="1064" height="545" alt=""/>
+	
 	 
- <!-- Button to open the modal login form -->
-	 
-<button id="password" onclick="document.getElementById('id01').style.display='block'">Login</button>
-
-<!-- The Modal -->
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'"
-class="close" title="Close Modal">&times;</span>
-
-  <!-- Modal Content -->
-  <form action="action_page.php">
-  <div class="imgcontainer">
-    <img src="Icons/1x/Login-avatar.png" height="100" width="auto" alt="Avatar" class="avatar">
-  </div>
-
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1; height: 5vh;margin-top;-1vh;justify-content: center;">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
-</div> 
-	</login>
+	 <loginform class="loginbox">
+     <img src="Icons/1x/Login-avatar.png" class="loginavatar" width="512" height="512" alt=""/>
+	 <h1 style="color:white;text-align: center">Login Here</h1>
+	 <form>
+	 <p>Username</p>
+	 <input type="text" name="" placeholder="Enter Username">
+	 <p>Password</p>
+	 <input type="password" name="" placeholder="Enter Password">
+	<input type="submit" name="" value="Login">
+		 <a href="#">Lost your password?</a><br>
+		 <a href="#">Don't have an account?</a>
+	</form>
+		 <img id="kealoginlogo" src="images/KEA_logo_EN_Web.jpg" width="1064" height="545" alt=""/>
+		 </loginform>
+		 </login>
 
 <navbar id="navigation-bar">
 	  
