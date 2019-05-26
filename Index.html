@@ -6,6 +6,23 @@
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+	<intro id="intro">
+		<h2 id="intro-text-one" class="intro-text-1">Hi there, thank you so much for taking your time to look at my mobile friendly Web-Prototype of Fronter.</h2>
+		
+		<h2 id="intro-text-two" class="intro-text-2">In order to optimize my time, and make the web-prototype look good. I only made select paths to follow.</h2>
+		
+		<h2 id="intro-text-three" class="intro-text-2">All elements marked with a * have no paths and are not ment to be chosen. I hope you have a lovely time navigating this Web-Prototype.</h2>
+		
+		<button onclick="firstintro()" type="button" class="next-button-1" id="intro-button-1"><h2>Next</h2> 
+		</button>
+		
+		<button onclick="secondintro()" type="button" class="next-button-hidden" id="intro-button-2"><h2>Next</h2> 
+		</button>
+		
+		<button onclick="finishintro()" type="button" class="next-button-hidden" id="finish-button"><h2>Continue</h2> 
+		</button>
+		
+	</intro>
 	
 			<header id="header">
 	<a id="english-danish"> <h2 style="padding-top: .8vh; font-size: 1.2em; color: #CA564A;">DK</h2></a>
@@ -20,10 +37,10 @@
 	<label for="psw" id="password"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required id="password-text">
 	 -->	
-	 <!-- Button to open the modal login form -->
 	 <img id="kealoginlogo" src="images/KEA_logo_EN_Web.jpg" width="1064" height="545" alt=""/>
 	 
  <!-- Button to open the modal login form -->
+	 
 <button id="password" onclick="document.getElementById('id01').style.display='block'">Login</button>
 
 <!-- The Modal -->
@@ -32,29 +49,29 @@
 class="close" title="Close Modal">&times;</span>
 
   <!-- Modal Content -->
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
-    </div>
+  <form action="action_page.php">
+  <div class="imgcontainer">
+    <img src="Icons/1x/Login-avatar.png" height="100" width="auto" alt="Avatar" class="avatar">
+  </div>
 
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
 
-      <a href="04.02.01_web_prototype.html"><button type="submit">Login</button></a>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
 
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
+  <div class="container" style="background-color:#f1f1f1; height: 5vh;margin-top;-1vh;justify-content: center;">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
 </div> 
 	</login>
 
