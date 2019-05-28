@@ -49,3 +49,8 @@ function finishintro(){
     f.style.display = "block";
   } else {
     f.style.display = "none";}}
+
+function openleftbox(){document.getElementById("leftbox-closed").setAttribute("class","leftbox-open");}
+
+function leftboxclose(){document.getElementById("leftbox-closed").setAttribute("class","");
+						document.getElementById("leftbox-closed").setAttribute("class","leftbox-closed");}

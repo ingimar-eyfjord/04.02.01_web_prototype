@@ -8,11 +8,81 @@
 
 <body>
 			<header id="header">
-	<a href="Index.html"> 
+			  <img src="images/twitteravatar.jpg.png" class="hoverclass" onclick="openleftbox()" width="auto" height="50vh" style="border-radius: 50%;top:0.5vh;left:5vw; position:absolute;" alt=""/>
+			<h2 onclick="openleftbox()" class="hoverclass" style="position:absolute; left:20vw; top:1.5vh;">HOME</h2> <a href="Index.html"> 
 	<h2 id="logout" style="font-size: 1.5em;padding-top: 1.5vh;padding-right: 0.5vh;padding-left:padding-bottom: 0.5vh;: 0.5vh;">LOG OUT</h2></a>
-	<a id="english-danish"> <h2 style="padding-top: .8vh; font-size: 1.2em; color: #CA564A;">DK</h2></a>
+	<a id="english-danish"> <h2 class="hoverclass" style="padding-top: .8vh; font-size: 1.2em; color: #CA564A;">DK</h2></a>
 	</header>
+	
+	<leftbox-profile id="leftbox-closed" class="leftbox-closed">
+		
+		<profile id="profile">
+	   <img src="images/twitteravatar.jpg.png" class="headeravatar" width="100" height="100" alt=""/>
+		  <img class="backbutton-newsfeed" onclick="leftboxclose()" src="Icons/backbutton.png" width="100" height="100" alt=""/>
+<profile-text id="profiletext">
+	  <h2 style="color:black;padding-bottom: 0.2em;">Ingimar Eyfjord Smarason</h2>
+	  <h2 style="color:gray; font-size:1em;padding-bottom: 1em;"> #ISmarason</h2>
+	  <h2 style="color:black;font-size: 1em;padding-bottom: 0.2em;"> 25 Following &emsp; 20 Followers</h2>
+		<br>
+		</profile-text>
+			<hr style="position:absolute; top:28vh;width: 80vw;">
+			<profile-menu id="profile-menu">
+			<h2 style="color: black;padding-bottom: 1em;"><img src="Icons/profile.png" width="20" height="auto" alt=""/>&ensp;Profile*</h2>
+			<h2 style="color: black;padding-bottom: 1em;"><img src="Icons/profile.png" width="20" height="auto" alt=""/>&ensp;Profile*</h2>
+			<h2 style="color: black;padding-bottom: 1em;"><img src="Icons/profile.png" width="20" height="auto" alt=""/>&ensp;Profile*</h2>
+			<h2 style="color: black;padding-bottom: 1em;"><img src="Icons/profile.png" width="20" height="auto" alt=""/>&ensp;Profile*</h2>
+			</profile-menu>
+			<hr style="position:absolute; top:56vh;width: 80vw;">
+		</profile>
+		<h2 style="color: black;padding-top:60vh;padding-bottom: 1em;padding-left:5vw;">Settings*</h2>
+		<h2 style="color: black;padding-left:5vw;">Help*</h2>
+	</leftbox-profile>
 
+	<centerbox-newsfeed class="newsbox">
+		
+		<newsbox-one>
+	    <img class="newsbox-logo" src="images/KEA_logo_EN_Web-2.jpg" width="50" height="auto" style="border-radius: 50%;" alt=""/>
+		<h2 class="newsbox-header-name">KEA</h2>
+		<h2 class="newsbox-header">Husk at tømme dit skab senest 1. juli</h2>
+		<p class="newsbox-paragraph">Kære studerende, alle lockers bliver tømt fra mandag d. 1. juli. Eventuelt glemt indhold med værdi opmagasineres hos KEA indtil 1. oktober 2019 og bliver derefter afleveret til politiets hittegodsk... </p>
+		<img class="newsboximg" src="images/lockers.jpg" alt=""/>
+		<h2 class="newsbox-hastag">#KEA-ADMIN</h2>
+		</newsbox-one>
+		
+		<newsbox-two>
+		<img class="newsbox-logo" src="images/twitteravatar.jpg.png"  width="50" height="auto" style="border-radius: 50%;" alt=""/>
+		<h2 class="newsbox-header-name">Ingimar Eyfjord Smarason</h2>
+		<h2 class="newsbox-header">Sunset vibes!</h2>
+		<p class="newsbox-paragraph">Have you ever wondered about how life can be beautiful?</p>
+		<img class="newsboximg" src="images/solseturpanorama.jpg" alt=""/>
+		<h2 class="newsbox-hastag">#ISmarason</h2>
+		</newsbox-two>
+		
+			<newsbox-three>
+		<img class="newsbox-logo" src="images/KEA_logo_EN_Web-2.jpg" width="50" height="auto" style="border-radius: 50%;" alt=""/>
+		<h2 class="newsbox-header-name">KEA</h2>
+		<h2 class="newsbox-header">Distortion på Nørrebro - onsdag d. 29. maj 2019</h2>
+		<p class="newsbox-paragraph">Onsdag d. 29 maj 2019 afholdes der Distortion på Indre Nørrebro, og gadefesten vil som tidligere år have forskellige konsekvenser for KEAs adresser på Nørrebro, bl.a. i form af ind-/udkørselsforbud...</p>
+		<img class="newsboximg" src="images/Distortion2017_V1.jpg" alt=""/>
+		<h2 class="newsbox-hastag">#KEA-ADMIN</h2>
+		</newsbox-three>
+		
+		<newsbox-four>
+		<img class="newsbox-logo" src="images/klavs.png" width="50" height="auto" style="border-radius: 50%;" alt=""/>
+		<h2 class="newsbox-header-name">Klavs Mortensen &emsp;&emsp;&emsp;</h2>
+		<h2 class="newsbox-header">I was attacked again!</h2>
+		<p class="newsbox-paragraph">Why does this keep happening to me? I was out walking like usually, and all of a sudden - a leaf attacked me!!! It flew right into my face.</p>
+		<img class="newsboximg" src="images/leaves-concrete.jpg" alt=""/>
+		<h2 class="newsbox-hastag">#KMortensen</h2>
+		</newsbox-four>
+		
+	</centerbox-newsfeed>	
+	
+	<rightbox-who-to-follow>
+	
+	</rightbox-who-to-follow>
+
+	
 <navbar id="navigation-bar">
 
 	
@@ -32,7 +102,8 @@
 
 	<newsfeed id="newsfeed-home">
    <a href="newsfeed.html"> <img src="Icons/1x/Hastag.png" class="navbar-image" width="491" height="428" alt=""/></a> </newsfeed>
-	
+	<script type="text/javascript" src="Javascript.js"></script>
+
 </navbar>
 </body>
 </html>
