@@ -10,9 +10,53 @@
 <header id="header">
 	<a href="Index.html"> 
 	<h2 id="logout" style="font-size: 1.5em;padding-top: 1.5vh;padding-right: 0.5vh;padding-left:padding-bottom: 0.5vh;: 0.5vh;">LOG OUT</h2></a>
+	<h2 id="home-menu" onclick="openleftbox()" class="hoverclass" style="position:absolute; left:20vw; top:1vh;font-size: 4vh;">HOME</h2>
 	<a id="english-danish"> <h2 class="hoverclass" style="padding-top: .8vh; font-size: 1.2em; color: #CA564A;">DK</h2></a>
 	</header>	
 	
+	
+	<semester-closed id="semester-closed">
+	
+<semester id="first-semester-closed" class="first-semester-closed"><h1 style="color:white;padding-top: 3.5vh;font-size: 1em;">03.02: A Bicycle Guide for non-Danes</h1>
+
+</semester>
+
+	<semester onclick="Teachingcurrenttaskdropdown()" id="Teaching-material-closed" class="Teaching-material-closed toggle-class"><h2 style="padding-top: 3.5vh">Teaching material</h2>
+		<inside-current id="inside-current-teach" onclick="dropdowninsidecurrentteach()" class="current-hidden">
+		<li> How to make a video.pdf </li>
+		<li> Slide 1.pdf </li>
+		<li> Slide 2.pdf </li>
+		<li> How to record.pdf</li>
+		<li> Slide 3.pdf </li>
+		<li> Slide 4.pdf </li>
+		</inside-current>
+	</semester>
+	
+	<semester onclick="Requirementscurrenttaskdropdown()" id="Requirements-closed" class="Requirements-closed toggle-class"><h2 style="padding-top: 3.5vh">Requirements</h2>
+		<inside-current id="inside-current" onclick="dropdowninsidecurrent()" class="current-hidden">
+		<li> Make a video 5mins long </li>
+		<li> Video file must be MP4 </li>
+		<li> Have sound </li>
+		<li> Make it funny</li>
+		</inside-current>
+	</semester>
+	
+	<semester onclick="pdfonclick()" id="download-pdf-closed" class="download-pdf-closed hoverclass"><h2 style="padding-top: 3.5vh;transform: translateY(-2vh)">Download PDF <img onclick="pdfonclick()" id="pdfonclick" class="hoverclass" src="Icons/pdf.png" alt=""/></h2>
+	</semester>
+	
+	<semester onclick="handcurrenttaskdropdown()" id="hand-in-closed" class="hand-in-closed toggle-class" style="margin-bottom:10vh;">
+		<h2 style="padding-top: 3.5vh; margin-bottom: 2vh;">Hand in</h2>
+		<inside-current id="inside-currenthand" onclick="dropdowninsidecurrent()" class="current-hidden">
+			
+			<textarea id="upload-box" placeholder="A file would show here*"></textarea>
+			<button id="handinbutton" ><h2>Hand in*</h2></button>
+			<h2 id="uploadtext" style="color:black; font-size: 1em;">Upload File* </h2>
+		</inside-current>
+		
+	</semester>
+	
+	</semester-closed>
+	<footer></footer>
 	<navbar id="navigation-bar">
 
 	
@@ -35,5 +79,31 @@
 	
 
 </navbar>
+<script type="text/javascript" src="Javascript.js"></script>
+<leftbox-profile id="leftbox-closed" class="leftbox-closed">
+		
+		<profile id="profile">
+	   <img src="images/twitteravatar.jpg.png" class="headeravatar" width="100" height="100" alt=""/>
+		  <img class="backbutton-newsfeed" onclick="leftboxclose()" src="Icons/backbutton.png" width="100" height="100" alt=""/>
+			
+		<profile-text id="profiletext">
+	  <h2 style="color:black;padding-bottom: 0.2em;">Ingimar Eyfjord Smarason</h2>
+	  <h2 style="color:gray; font-size:1em;padding-bottom: 1em;"> #ISmarason</h2>
+	  <h2 style="color:black;font-size: 1em;padding-bottom: 0.2em;"> 25 Following &emsp; 20 Followers</h2>
+		<br>
+		</profile-text>
+			<hr style="position:absolute; top:28vh;width: 80vw;">
+			<profile-menu id="profile-menu">
+			<h2 style="color: black;padding-bottom: 1em;"><img src="Icons/profile.png" width="20" height="auto" alt=""/>&ensp;Profile*</h2>
+			<h2 style="color: black;padding-bottom: 1em;"><img src="Icons/profile.png" width="20" height="auto" alt=""/>&ensp;Profile*</h2>
+			<h2 style="color: black;padding-bottom: 1em;"><img src="Icons/profile.png" width="20" height="auto" alt=""/>&ensp;Profile*</h2>
+			<h2 style="color: black;padding-bottom: 1em;"><img src="Icons/profile.png" width="20" height="auto" alt=""/>&ensp;Profile*</h2>
+			</profile-menu>
+			<hr style="position:absolute; top:56vh;width: 80vw;">
+		</profile>
+		<h2 style="color: black;padding-top:60vh;padding-bottom: 1em;padding-left:5vw;">Settings*</h2>
+		<h2 style="color: black;padding-left:5vw;">Help*</h2>
+	</leftbox-profile>
+	
 </body>
 </html>

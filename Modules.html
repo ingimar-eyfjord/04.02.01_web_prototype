@@ -9,6 +9,7 @@
 <body>
 	
 		<header id="header">
+			<h2 id="home-menu" onclick="openleftbox()" class="hoverclass" style="position:absolute; left:20vw; top:1vh;font-size: 4vh;">HOME</h2>
 	<a href="Index.html"> 
 	<h2 id="logout" style="font-size: 1.5em;padding-top: 1.5vh;padding-right: 0.5vh;padding-left:padding-bottom: 0.5vh;: 0.5vh;">LOG OUT</h2></a>
 	<a id="english-danish"> <h2 class="hoverclass" style="padding-top: .8vh; font-size: 1.2em; color: #CA564A;">DK</h2></a>
@@ -20,19 +21,19 @@
 
 <modules id="modules-1">
 
-	<div id="module-1" class="module-1"><h2 style="padding-top: 3.5vh;color: #2B3449;">B. Theme 01: Basic Web*</h2>
+	<div id="module-1" class="module-1"><h2 style="padding-top: 3.5vh;color: #2B3449;font-size: 1em;">B. Theme 01: Basic Web*</h2>
 	</div>
 
 <div id="module-2" class="module-2">
-	<h2 style="padding-top: 3.5vh;color: #2B3449;">C. Theme 02: Basic Animation*</h2>
+	<h2 style="padding-top: 3.5vh;color: #2B3449;font-size: 1em;">C. Theme 02: Basic Animation*</h2>
 	</div>
 	
 <a href="D-Theme-03-Basic-Content.html"><div id="module-3" class="module-3">
-	<a href="D-Theme-03-Basic-Content.html"><h2 style="padding-top: 3.5vh;color: #2B3449;">D. Theme 03: Basic Content</h2></a>
+	<a href="D-Theme-03-Basic-Content.html"><h2 style="padding-top: 3.5vh;color: #2B3449;font-size: 1em;">D. Theme 03: Basic Content</h2></a>
 	</div></a>
 
 	<div id="module-4" class="module-4">
-		<h2 style="padding-top: 3.5vh;color: #2B3449;">E. Theme 04: Basic UX*</h2>
+		<h2 style="padding-top: 3.5vh;color: #2B3449;font-size: 1em;">E. Theme 04: Basic UX*</h2>
 	</div>
 	</modules>	
 </semester>
@@ -75,6 +76,31 @@
 	
 </navbar>
 	<script type="text/javascript" src="Javascript.js"></script>
-
+	
+	<leftbox-profile id="leftbox-closed" class="leftbox-closed">
+		
+		<profile id="profile">
+	   <img src="images/twitteravatar.jpg.png" class="headeravatar" width="100" height="100" alt=""/>
+		  <img class="backbutton-newsfeed" onclick="leftboxclose()" src="Icons/backbutton.png" width="100" height="100" alt=""/>
+			
+		<profile-text id="profiletext">
+	  <h2 style="color:black;padding-bottom: 0.2em;">Ingimar Eyfjord Smarason</h2>
+	  <h2 style="color:gray; font-size:1em;padding-bottom: 1em;"> #ISmarason</h2>
+	  <h2 style="color:black;font-size: 1em;padding-bottom: 0.2em;"> 25 Following &emsp; 20 Followers</h2>
+		<br>
+		</profile-text>
+			<hr style="position:absolute; top:28vh;width: 80vw;">
+			<profile-menu id="profile-menu">
+			<h2 style="color: black;padding-bottom: 1em;"><img src="Icons/profile.png" width="20" height="auto" alt=""/>&ensp;Profile*</h2>
+			<h2 style="color: black;padding-bottom: 1em;"><img src="Icons/profile.png" width="20" height="auto" alt=""/>&ensp;Profile*</h2>
+			<h2 style="color: black;padding-bottom: 1em;"><img src="Icons/profile.png" width="20" height="auto" alt=""/>&ensp;Profile*</h2>
+			<h2 style="color: black;padding-bottom: 1em;"><img src="Icons/profile.png" width="20" height="auto" alt=""/>&ensp;Profile*</h2>
+			</profile-menu>
+			<hr style="position:absolute; top:56vh;width: 80vw;">
+		</profile>
+		<h2 style="color: black;padding-top:60vh;padding-bottom: 1em;padding-left:5vw;">Settings*</h2>
+		<h2 style="color: black;padding-left:5vw;">Help*</h2>
+	</leftbox-profile>
+<footer></footer>
 </body>
 </html>
