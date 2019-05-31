@@ -71,7 +71,10 @@ function handcurrenttaskdropdown(){document.getElementById("hand-in-closed").cla
 function pdfonclick()
 {document.getElementById("pdfonclick").setAttribute("class", "pdfget");}
 
-document.querySelector("login").addEventListener("click", function(event){document.getElementById("login");event.preventDefault();window.location.href = "04.02.01_web_prototype.html";
+document.getElementById("login").onclick = function(){event.preventDefault();window.location.href = "04.02.01_web_prototype.html";}
+
+/*
+addEventListener("click", function(event){document.getElementById("login");event.preventDefault();window.location.href = "04.02.01_web_prototype.html";
 }, false);
 
 /*
