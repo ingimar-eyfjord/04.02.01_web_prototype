@@ -1191,12 +1191,15 @@ height: auto;
 	margin-top: -5.9vh;
 	width:auto;}
 
-.week-22{
+.week-22{position: absolute;
 	display: none;
+	margin-bottom: 10vh;
 }
-.week-23{display: none;}
+.week-23{display: none;
+margin-bottom: 10vh;}
 
-.week-24{display: none;}
+.week-24{display: none;
+margin-bottom: 10vh;}
 
 
 /*
